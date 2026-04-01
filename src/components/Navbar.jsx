@@ -23,8 +23,8 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </div>
         </div>
-        <div className="flex w-50 mr-60 hidden md:block ">
-          <button className="bg-white w-20 h-10 rounded-xl">Sign Up</button>
+        <div className="flex w-50 mr-30 hidden md:block ">
+          <button className="bg-white w-20 h-10 mr-10 rounded-xl">Sign Up</button>
           <button className="bg-[#8b3dff] w-20 h-10 rounded-xl text-white">
             Login
           </button>
@@ -42,7 +42,7 @@ const Navbar = () => {
         )}
       </div>
       {activeLink && (
-        <div className="flex flex-col block md:hidden bg-indigo-700 shadow-sm  p-4">
+        <div className="flex flex-col block md:hidden bg-indigo-700 shadow-sm  p-4 text-white">
           <a href="#">Home</a>
           <a href="#">Courses</a>
           <a href="#">Teacher</a>
