@@ -24,7 +24,7 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex w-50 mr-30 hidden md:block gap-8">
-          <button className="bg-white w-20 h-10 rounded-xl">Sign Up</button>
+          <button className="bg-white w-20 h-10 mr-10 rounded-xl">Sign Up</button>
           <button className="bg-[#8b3dff] w-20 h-10 rounded-xl text-white">
             Login
           </button>
