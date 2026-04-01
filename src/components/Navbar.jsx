@@ -8,7 +8,7 @@ const Navbar = () => {
   const [activeLink, setActiveLink] = useState("true");
   return (
     <div>
-      <div className="bg-indigo-600 shadow-sm p-2 flex justify-between items-center">
+      <div className="bg-indigo-700 shadow-sm p-2 flex justify-between items-center">
         <div className="flex items-center">
           <div className="font-extrabold text-purple-700 text-xl md:ml-20">
             EduSmart
@@ -23,7 +23,7 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </div>
         </div>
-        <div className="flex gap-4 mr-60 md:block sm:hidden">
+        <div className="flex w-50 mr-60 md:block sm:hidden ">
           <button className="bg-white w-25 h-10 rounded-xl">Sign Up</button>
           <button className="bg-[#8b3dff] w-25 h-10 rounded-xl text-white">
             Login
@@ -42,7 +42,7 @@ const Navbar = () => {
         )}
       </div>
       {activeLink && (
-        <div className="flex flex-col hidden md:block bg-indigo-600 shadow-sm  p-4">
+        <div className="flex flex-col hidden md:block bg-indigo-700 shadow-sm  p-4">
           <a href="#">Home</a>
           <a href="#">Courses</a>
           <a href="#">Teacher</a>
