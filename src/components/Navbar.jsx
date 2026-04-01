@@ -10,12 +10,12 @@ const Navbar = () => {
     <div>
       <div className="bg-indigo-700 shadow-sm p-2 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="font-extrabold text-purple-700 text-xl md:ml-20">
+          <div className="font-extrabold text-white text-xl md:ml-20">
             EduSmart
           </div>
         </div>
         <div className="flex hidden md:block">
-          <div className="flex gap-3">
+          <div className="flex gap-3 text-white">
             <a href="#">Home</a>
             <a href="#">Coursed</a>
             <a href="">Teachers</a>
@@ -23,8 +23,8 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </div>
         </div>
-        <div className="flex w-50 mr-30 hidden md:block ">
-          <button className="bg-white w-20 h-10 mr-10 rounded-xl">Sign Up</button>
+        <div className="flex w-50 mr-30 hidden md:block gap-4">
+          <button className="bg-white w-20 h-10 rounded-xl">Sign Up</button>
           <button className="bg-[#8b3dff] w-20 h-10 rounded-xl text-white">
             Login
           </button>
