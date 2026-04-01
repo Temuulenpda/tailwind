@@ -10,11 +10,11 @@ const Navbar = () => {
     <div>
       <div className="bg-indigo-600 shadow-sm p-2 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="font-extrabold text-purple-500 text-xl md:ml-20">
+          <div className="font-extrabold text-purple-700 text-xl md:ml-20">
             EduSmart
           </div>
         </div>
-        <div className="flex hidden md:block">
+        <div className="flex md:hidden">
           <div className="flex gap-3">
             <a href="#">Home</a>
             <a href="#">Coursed</a>
@@ -42,7 +42,7 @@ const Navbar = () => {
         )}
       </div>
       {activeLink && (
-        <div className="flex flex-col hidden md:block bg-indigo-300 shadow-sm  p-4">
+        <div className="flex flex-col hidden md:block bg-indigo-600 shadow-sm  p-4">
           <a href="#">Home</a>
           <a href="#">Courses</a>
           <a href="#">Teacher</a>
