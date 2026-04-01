@@ -32,12 +32,12 @@ const Navbar = () => {
         {activeLink ? (
           <HiX
             onClick={() => setActiveLink(false)}
-            className="w-8 h-8 md:hidden"
+            className="w-8 h-8 md:hidden text-white"
           />
         ) : (
           <HiMenu
             onClick={() => setActiveLink(true)}
-            className="w-8 h-8 md:hidden"
+            className="w-8 h-8 md:hidden text-white"
           />
         )}
       </div>
