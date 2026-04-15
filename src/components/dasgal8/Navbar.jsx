@@ -5,16 +5,15 @@ import { useState } from "react";
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("true");
   return (
-    <div >
-      <div className="w-full shadow-lg">
-        <div className=" p-2 flex justify-between items-center">
+    <div>
+      <div className="bg-gray-300 shadow-sm p-2 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="font-extrabold  text-xl md:ml-20 text-orange-500">
-          Foodhouse
+          <div className="font-extrabold text-purple-500 text-xl md:ml-20">
+            EduSmart
           </div>
         </div>
-        <div className="flex sm:hidden md:block">
-          <div className="flex gap-3">
+        <div className="flex hidden md:block">
+          <div className="flex gap-3 text-white">
             <a href="#">Home</a>
             <a href="#">Menu</a>
             <a href="">About</a>
@@ -23,25 +22,30 @@ const Navbar = () => {
           </div>
         </div>
         <div className="flex gap-4 mr-60 md:block sm:hidden">
-          <button className="bg-orange-500 w-25 h-10 rounded-xl text-white">Book Table</button>
+          <button className="bg-white w-25 h-10 rounded-xl">Sign Up</button>
+          <button className="bg-[#8b3dff] w-25 h-10 rounded-xl text-white">
+            Login
+          </button>
         </div>
         {activeLink ? (
           <HiX
             onClick={() => setActiveLink(false)}
-            className="w-8 h-8 md:hidden"
+            className="w-8 h-8 md:hidden text-white"
           />
         ) : (
           <HiMenu
             onClick={() => setActiveLink(true)}
-            className="w-8 h-8 md:hidden"
+            className="w-8 h-8 md:hidden text-white"
           />
         )}
       </div>
       {activeLink && (
-        <div className="flex flex-col md:hidden md:block  p-4">
-           {navLinks.map((item)=> (
-            <div>{item.name}</div>
-           ))}
+        <div className="flex flex-col md:hidden md:block bg-gray-300 shadow-sm  p-4">
+          <a href="#">Home</a>
+          <a href="#">Courses</a>
+          <a href="#">Teacher</a>
+          <a href="#">Pricing</a>
+          <a href="#">Contact</a>
         </div>
       )}
       </div>
