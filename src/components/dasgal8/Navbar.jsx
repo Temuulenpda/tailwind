@@ -9,15 +9,14 @@ const Navbar = () => {
         <div className=" p-2 flex justify-between items-center">
         <div className="flex items-center">
           <div className="font-extrabold  text-xl md:ml-20 text-orange-500">
-          Foodhouse
- 
+         <h1> Foodhouse</h1>
           </div>
         </div>
         <div className="hidden md:block">
-          <div className="flex gap-3 text-white">
+          <div className="flex gap-3">
             <a href="#">Home</a>
             <a href="#">Menu</a>
-            <a href="">About</a>
+            <a href="#">About</a>
             <a href="#">Reservation</a>
             <a href="#">Contact</a>
           </div>
@@ -28,12 +27,12 @@ const Navbar = () => {
         {activeLink ? (
           <HiX
             onClick={() => setActiveLink(false)}
-            className="w-8 h-8 md:hidden text-white"
+            className="w-8 h-8 md:hidden"
           />
         ) : (
           <HiMenu
             onClick={() => setActiveLink(true)}
-            className="w-8 h-8 md:hidden text-white"
+            className="w-8 h-8 md:hidden"
           />
         )}
       </div>
