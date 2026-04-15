@@ -1,33 +1,29 @@
 import React from "react";
+import { navLinks } from "./Dasgal8data/data";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
-// Logo
-// Sign Up Login
-// Home Products Solutions Pricing Contact
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("true");
   return (
-    <div>
-      <div className="bg-gray-300 shadow-sm p-2 flex justify-between items-center">
+    <div >
+      <div className="w-full shadow-lg">
+        <div className=" p-2 flex justify-between items-center">
         <div className="flex items-center">
-          <div className="font-extrabold text-purple-500 text-xl md:ml-20">
-            EduSmart
+          <div className="font-extrabold  text-xl md:ml-20 text-orange-500">
+          Foodhouse
           </div>
         </div>
         <div className="flex sm:hidden md:block">
           <div className="flex gap-3">
             <a href="#">Home</a>
-            <a href="#">Coursed</a>
-            <a href="">Teachers</a>
-            <a href="#">Pricing</a>
+            <a href="#">Menu</a>
+            <a href="">About</a>
+            <a href="#">Reservation</a>
             <a href="#">Contact</a>
           </div>
         </div>
         <div className="flex gap-4 mr-60 md:block sm:hidden">
-          <button className="bg-white w-25 h-10 rounded-xl">Sign Up</button>
-          <button className="bg-[#8b3dff] w-25 h-10 rounded-xl text-white">
-            Login
-          </button>
+          <button className="bg-orange-500 w-25 h-10 rounded-xl text-white">Book Table</button>
         </div>
         {activeLink ? (
           <HiX
@@ -42,14 +38,13 @@ const Navbar = () => {
         )}
       </div>
       {activeLink && (
-        <div className="flex flex-col md:hidden md:block bg-gray-300 shadow-sm  p-4">
-          <a href="#">Home</a>
-          <a href="#">Courses</a>
-          <a href="#">Teacher</a>
-          <a href="#">Pricing</a>
-          <a href="#">Contact</a>
+        <div className="flex flex-col md:hidden md:block  p-4">
+           {navLinks.map((item)=> (
+            <div>{item.name}</div>
+           ))}
         </div>
       )}
+      </div>
     </div>
   );
 };

@@ -1,6 +1,7 @@
 
 import { useState } from "react";
-import Dasgal7 from "./components/Dasgal7";
+import RestaurantPage from "./components/dasgal8/RestaurantPage";
+
 
 
 function App() {
@@ -9,7 +10,7 @@ function App() {
   return (
     <>
       <div>
-        <Dasgal7 />
+        <RestaurantPage />
       </div>
     </>
   );

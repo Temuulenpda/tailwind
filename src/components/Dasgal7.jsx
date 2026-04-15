@@ -1,15 +1,14 @@
 import React from 'react'
-import NavBar from "./NavBar"
+import Navbar from "./Navbar"
 import Footer from './Footer'
 import Banner from './Banner'
 import Why from './Why'
 import Courses from './Courses'
-Courses
-Why
+
 const Dasgal7 = () => {
   return (
     <div>
-      <NavBar />
+      <Navbar />
       <Banner/>
       <Courses />
       <Why />
