@@ -3,10 +3,8 @@ import { navLinks } from "./Dasgal8data/data";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState("true");
+  const [activeLink, setActiveLink] = useState("false");
   return (
-
-    <div >
       <div className="w-full shadow-lg">
         <div className=" p-2 flex justify-between items-center">
         <div className="flex items-center">
@@ -15,7 +13,7 @@ const Navbar = () => {
  
           </div>
         </div>
-        <div className="flex hidden md:block">
+        <div className="hidden md:block">
           <div className="flex gap-3 text-white">
             <a href="#">Home</a>
             <a href="#">Menu</a>
@@ -24,7 +22,7 @@ const Navbar = () => {
             <a href="#">Contact</a>
           </div>
         </div>
-        <div className="flex gap-4 mr-60 md:block sm:hidden">
+        <div className="flex gap-4 mr-60 hidden md:block">
           <button className="bg-orange-500 w-25 h-10 rounded-xl text-white">Book Table</button>
         </div>
         {activeLink ? (
@@ -48,7 +46,6 @@ const Navbar = () => {
 
         </div>
       )}
-    </div>
     </div>
   );
 };
