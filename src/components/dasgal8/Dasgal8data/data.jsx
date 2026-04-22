@@ -3,31 +3,66 @@ import HealthySalad from '../dimage/HealthySalad.avif'
 import ItalianPast from '../dimage/ItalianPasta.avif'
 import chefinfo from '../dimage/chefInfo.avif'
 export const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "Menu", href: "#" },
-    { name: "About", href: "#" },
-    { name: "Reservation", href: "#" },
-    { name: "Contact", href: "#" },
+    { name: "Home", href: "#navbar" },
+    { name: "Menu", href: "#Menu" },
+    { name: "About", href: "#About" },
+    { name: "Reservation", href: "#Reservation" },
+    { name: "Contact", href: "#Contact" },
 ];
-
 export const dishes = [
     {
+        id: 1,
         name: "Grilled Steak",
         description: "Juicy grilled beef served with vegetables.",
         price: "$18",
         image: GrilledSteak,
     },
     {
+        id: 2,
         name: "Italian Pasta",
         description: "Creamy pasta with fresh herbs and parmesan cheese.",
         price: "$14",
         image: ItalianPast,
     },
     {
+        id: 3,
         name: "Healthy Salad",
         description: "Fresh vegetables with a light lemon dressing.",
         price: "$10",
         image: HealthySalad,
+    },
+];
+
+export const menuDetails = [
+    {
+        id: 1,
+        name: "Grilled Steak",
+        price: "$18",
+        serving: "Serves 1",
+        prepTime: "20 min",
+        description:
+            "Tender grilled beef served with roasted vegetables and a savory house sauce for a rich and satisfying main dish.",
+        extras: ["Herb butter finish", "Seasonal vegetables", "Choice of side sauce"],
+    },
+    {
+        id: 2,
+        name: "Italian Pasta",
+        price: "$14",
+        serving: "Serves 1",
+        prepTime: "15 min",
+        description:
+            "Creamy pasta blended with parmesan, fresh herbs, and a smooth sauce that makes it a comforting customer favorite.",
+        extras: ["Fresh parmesan topping", "Garlic bread option", "Balanced creamy texture"],
+    },
+    {
+        id: 3,
+        name: "Healthy Salad",
+        price: "$10",
+        serving: "Serves 1",
+        prepTime: "10 min",
+        description:
+            "A refreshing mix of crisp vegetables and lemon dressing, perfect for a light meal that still feels complete.",
+        extras: ["Fresh lemon dressing", "Crunchy seasonal greens", "Light and clean flavor"],
     },
 ];
 

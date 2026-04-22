@@ -5,7 +5,7 @@ import { useState } from "react";
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("false");
   return (
-      <div className="w-full shadow-lg">
+      <div id="navbar" className="w-full shadow-md">
         <div className=" p-2 flex justify-between items-center">
         <div className="flex items-center">
           <div className="font-extrabold  text-xl md:ml-20 text-orange-500">
@@ -14,11 +14,11 @@ const Navbar = () => {
         </div>
         <div className="hidden md:block">
           <div className="flex gap-3">
-            <a href="#">Home</a>
-            <a href="#">Menu</a>
-            <a href="#">About</a>
-            <a href="#">Reservation</a>
-            <a href="#">Contact</a>
+           {navLinks.map((item , index) => (
+            <a href={item.href} className="text-gray-700 hover:text-orange-500">
+              {item.name}
+            </a>
+           ))}
           </div>
         </div>
         <div className="flex gap-4 mr-60 hidden md:block">

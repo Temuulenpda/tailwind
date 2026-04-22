@@ -3,7 +3,7 @@ import { footerLinks } from './Dasgal8data/data'
 footerLinks
 const Footer = () => {
   return (
-    <div>
+    <div id='Contact'>
       <div className='w-full bg-orange-500 py-4 px-8 text-white flex flex-col md:flex-row justify-center mx-auto items-center'>
         <div className='w-1/2 gap-10 flex sm:mb-8'>
            <div>

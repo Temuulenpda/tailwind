@@ -3,7 +3,7 @@ import { chefInfo } from './Dasgal8data/data'
 import  chefinfo  from './dimage/chefInfo.avif'
 const ChefSection = () => {
   return (
-    <div>
+    <div id='About'>
          <div className='w-full md:flex-row flex sm:flex-col py-8 px-4 bg-orange-100'>
               <div className='sm:w-full md:w-1/2 flex justify-center  items-center '>
                            <img src={chefInfo.image} alt="" className='w-5/6 rounded-2xl' />

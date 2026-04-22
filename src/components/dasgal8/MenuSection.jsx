@@ -6,7 +6,7 @@ import ItalianPast from './dimage/ItalianPasta.avif'
 
 const MenuSection = () => {
   return (
-    <div>
+    <div id='Menu'>
          <div className='w-full mx-auto px-4 py8  flex flex-col justify-center mb-10'>
                     <h1 className='text-center text-3xl font-bold mb-4'>Popular Menu</h1>
                     <p className='text-center text-gray-600 mb-8'>Discover our most loved dishes</p>
