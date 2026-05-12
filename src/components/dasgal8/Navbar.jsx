@@ -2,8 +2,11 @@ import React from "react";
 import { navLinks } from "./Dasgal8data/data";
 import { HiMenu, HiX } from "react-icons/hi";
 import { useState } from "react";
-const Navbar = ({ openBooking, openLogin }) => {
+const Navbar = ({ openBooking, openLogin, openMyOrders, screen }) => {
   const [activeLink, setActiveLink] = useState(false);
+  
+  if (screen !== "home") return null;
+  
   return (
       <div id="navbar" className="w-full bg-white shadow-md relative z-40">
         <div className=" p-2 flex justify-between items-center">
@@ -22,6 +25,7 @@ const Navbar = ({ openBooking, openLogin }) => {
           </div>
         </div>
         <div className="flex mr-60 hidden md:block">
+          <button className="border border-orange-200 w-25 h-10 rounded-xl text-orange-600 bg-orange-100 hover:bg-orange-300 mr-3" onClick={openMyOrders}>My Orders</button>
           <button className="bg-orange-500 w-25 h-10 rounded-xl text-white mr-3 hover:bg-orange-600" onClick={openBooking}>Book Table</button>
           <button className="border border-orange-500 w-25 h-10 rounded-xl text-orange-600 hover:bg-gray-100" onClick={openLogin}>Login</button>
         </div>
