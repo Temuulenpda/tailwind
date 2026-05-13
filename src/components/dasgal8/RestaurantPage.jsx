@@ -7,11 +7,23 @@ import Showcase from './Showcase'
 import Order from './Order'
 import AuthModal from './AuthModal'
 import MyOrder from './MyOrder'
+import AddFood from './AddFood'
 const RestaurantPage = () => {
   const [isOpen, setIsOpen] = useState(false)
   const [authOpen, setAuthOpen] = useState(false)
   const [authMode, setAuthMode] = useState("booking")
+  const [addf, setAddf] = useState(false)
   const [screen, setScreen] = useState("home")
+  const [orders, setOrders] = useState([])
+  
+  const handleAddToOrder = (itemId) => {
+    setOrders([...orders, itemId])
+    setAddf(false)
+  }
+  
+  const handleRemoveOrder = (index) => {
+    setOrders(orders.filter((_, i) => i !== index))
+  }
   return (
     <div> 
         <Navbar  
@@ -35,7 +47,10 @@ const RestaurantPage = () => {
             <Footer />
           </>
         )}
-        <MyOrder state={screen === "myorders"}  close={() => setScreen("home")}/>
+        <MyOrder state={screen === "myorders"}  close={() => setScreen("home")}
+          openAddFood={() => setAddf(true)} orders={orders} onRemoveOrder={handleRemoveOrder} />
+        <AddFood state={addf} close={() => setAddf(false)} onAddToOrder={handleAddToOrder}
+          />
     </div>
   
   )

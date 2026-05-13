@@ -7,7 +7,7 @@ const AuthModal = ({ open, close, mode, switchMode }) => {
   }
   return (
     <div className="fixed top-0 right-0 left-0 z-50 flex justify-center items-center  px-4 py-8 bg-black/50  ">
-      <div className="bg-white w-full max-w-md rounded-3xl p-6 shadow-xl md:p-8">
+      <div className="">
         <div className="mb-6 flex items-start justify-between gap-4">
           <div>
             <p className="mb-2 text-sm font-semibold uppercase text-orange-600">
